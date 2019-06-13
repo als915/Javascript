@@ -1,0 +1,65 @@
+body{
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Orator STD; 
+}
+
+@keyframes animate{
+	0% {transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+
+#control{
+			position: fixed;
+			top: 20px;
+			left: 20px;
+		}
+
+#smiley{
+	height: 500px;
+	width: 500px;
+	position: relative;
+	border-radius: 50%;
+	background: linear-gradient(to bottom right,#EF6DA0, #EE8E6B);
+	animation-name: animate; 
+	animation-duration: 4s; 
+	animation-iteration-count: infinite;
+	animation-timing-function: linear; 
+}
+
+#smiley .eye{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.leftEye{
+	top: 100px;
+	left: 100px;
+	background-color: transparent;
+	border: 5px solid #39E5B6;
+}
+
+.rightEye{
+	top: 100px;
+	right: 100px;
+	background-color: transparent;
+	border: 5px solid #39E5B6;
+}
+
+.mouth{
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	height: 150px;
+	background-color: transparent;
+	border: 5px solid #39E5B6;
+	position: absolute;
+	width: 300px;
+	left: 100px;
+	top: 275px;
+}
+
